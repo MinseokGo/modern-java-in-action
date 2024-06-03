@@ -1,4 +1,4 @@
-package modernjava.ch2.apple;
+package modernjava.ch2.apple.domain;
 
 public enum Color {
 

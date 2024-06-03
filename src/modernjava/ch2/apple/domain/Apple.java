@@ -1,17 +1,17 @@
-package modernjava.ch2.apple;
+package modernjava.ch2.apple.domain;
 
 public class Apple {
 
-    private final int weigh;
+    private final int weight;
     private final Color color;
 
     public Apple(int weigh, Color color) {
-        this.weigh = weigh;
+        this.weight = weigh;
         this.color = color;
     }
 
-    public int getWeigh() {
-        return weigh;
+    public int getWeight() {
+        return weight;
     }
 
     public Color getColor() {

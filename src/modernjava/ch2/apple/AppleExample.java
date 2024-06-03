@@ -1,8 +1,12 @@
 package modernjava.ch2.apple;
 
-import static modernjava.ch2.apple.Color.*;
+import static modernjava.ch2.apple.domain.Color.*;
 
 import java.util.List;
+import modernjava.ch2.apple.domain.Apple;
+import modernjava.ch2.apple.predicate.AppleGreenColorPredicate;
+import modernjava.ch2.apple.predicate.AppleHeavyWeightPredicate;
+import modernjava.ch2.apple.predicate.AppleRedAntHeavyPredicate;
 
 public class AppleExample {
 
@@ -15,10 +19,8 @@ public class AppleExample {
     );
 
     public static void main(String[] args) {
-        List<Apple> greenApples = AppleResearcher.filterApplesByColor(inventory, GREEN);
-        List<Apple> redApples = AppleResearcher.filterApplesByColor(inventory, RED);
-
-        greenApples.forEach(apple -> System.out.println(apple.getColor()));
-        redApples.forEach(apple -> System.out.println(apple.getColor()));
+        List<Apple> greenApples = AppleResearcher.filterApples(inventory, new AppleGreenColorPredicate());
+        List<Apple> heavyApples = AppleResearcher.filterApples(inventory, new AppleHeavyWeightPredicate());
+        List<Apple> redAndHeavyApples = AppleResearcher.filterApples(inventory, new AppleRedAntHeavyPredicate());
     }
 }
