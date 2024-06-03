@@ -1,2 +1,7 @@
-package modernjava.ch2;public enum Color {
+package modernjava.ch2;
+
+public enum Color {
+
+    RED,
+    GREEN
 }
