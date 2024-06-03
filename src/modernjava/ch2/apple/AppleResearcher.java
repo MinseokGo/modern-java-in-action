@@ -1,4 +1,4 @@
-package modernjava.ch2;
+package modernjava.ch2.apple;
 
 import java.util.ArrayList;
 import java.util.List;

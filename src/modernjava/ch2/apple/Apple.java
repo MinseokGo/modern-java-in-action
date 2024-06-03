@@ -1,4 +1,4 @@
-package modernjava.ch2;
+package modernjava.ch2.apple;
 
 public class Apple {
 
